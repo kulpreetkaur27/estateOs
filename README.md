@@ -3,8 +3,6 @@
 A full-stack real estate platform connecting property buyers with realtors — 
 built with React, GraphQL, Node.js, MongoDB, and Socket.IO.
 
-🔴 **[Live Demo](#)** · **[Backend API](#)**  ← replace with real links
-
 ---
 
 ## Overview
