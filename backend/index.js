@@ -12,6 +12,8 @@ const http = require('http');
 const authMiddleware = require('./auth');
 const io = require('./socket');
 
+const app = express();  
+
 app.use(cors({
   origin: [
     'http://localhost:5173',
@@ -21,8 +23,6 @@ app.use(cors({
 }));
 
 const PORT = process.env.PORT || 5000;
-
-
 
 // Add the graphql-upload middleware
 app.use(graphqlUploadExpress({ maxFileSize: 10000000, maxFiles: 10 }));
