@@ -1,20 +1,23 @@
+# Backend
 backend/node_modules
 backend/.env
-.DS_Store
 
+# Frontend
 frontend/node_modules
-frontend/.pnp
-frontend/.pnp.js
-
-# testing
-frontend/coverage
-
-frontend/.DS_Store
+frontend/.env
 frontend/.env.local
 frontend/.env.development.local
 frontend/.env.test.local
 frontend/.env.production.local
+frontend/.pnp
+frontend/.pnp.js
+frontend/coverage
 
+# System
+.DS_Store
+frontend/.DS_Store
+
+# Logs
 frontend/npm-debug.log*
 frontend/yarn-debug.log*
 frontend/yarn-error.log*
