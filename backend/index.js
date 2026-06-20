@@ -12,11 +12,14 @@ const http = require('http');
 const authMiddleware = require('./auth');
 const io = require('./socket');
 
-const app = express();
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin: [
+    'http://localhost:5173',
+    'https://estate-os-mauve.vercel.app'
+  ],
   credentials: true,
 }));
+
 const PORT = process.env.PORT || 5000;
 
 

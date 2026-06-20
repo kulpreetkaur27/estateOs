@@ -8,7 +8,10 @@ const configureSocket = (httpServer) => {
   console.log("Configuring Socket.io...");
   const io = new Server(httpServer, {
     cors: {
-      origin: "http://localhost:5173", // Add your client origin
+      origin: [
+        'http://localhost:5173',
+        'https://estate-os-mauve.vercel.app'
+      ],
       methods: ["GET", "POST"],
       credentials: true
     }
